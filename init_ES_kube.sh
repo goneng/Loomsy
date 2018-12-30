@@ -27,4 +27,6 @@ kubectl create -f kibana.yaml
 
 # --- Start the ES - Done ---------------------------------------------------- #
 set +x
-exit 0
+
+# --- Monitor the amount of running ES nodes --------------------------------- #
+./monitor_ES_kube.sh
